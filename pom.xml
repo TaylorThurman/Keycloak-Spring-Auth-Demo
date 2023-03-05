@@ -8,15 +8,15 @@
 		<version>2.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.datmt</groupId>
+	<groupId>dev.dreamingincode</groupId>
 	<artifactId>keycloak-springboot-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>keycloak-springboot-authentication</name>
-	<description>Spring boot keycloak authen</description>
+	<description>Spring Boot Keycloak Auth</description>
 
 	<properties>
-		<java.version>11</java.version>
-		<keycloak.version>15.0.2</keycloak.version>
+		<java.version>17</java.version>
+		<keycloak.version>21.0.1</keycloak.version>
 	</properties>
 
 	<dependencies>

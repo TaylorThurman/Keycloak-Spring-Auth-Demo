@@ -45,7 +45,6 @@ public class UserController {
     @PostMapping("/login")
     public ResponseEntity<AccessTokenResponse> login(@NotNull @RequestBody LoginRequest loginRequest) {
         Keycloak keycloak = kcProvider.newKeycloakBuilderWithPasswordCredentials(loginRequest.getUsername(), loginRequest.getPassword()).build();
-
         AccessTokenResponse accessTokenResponse = null;
         try {
             accessTokenResponse = keycloak.tokenManager().getAccessToken();
